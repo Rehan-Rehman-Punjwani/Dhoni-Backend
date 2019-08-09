@@ -22,13 +22,13 @@ import com.example.demo.model.Customer;
 
 public class MyRestController {
 
-private List<Customer> employees = createList();
+private List<Customer> customers = createList();
 
 @RequestMapping(value = "/customers", method = RequestMethod.GET, produces = "application/json")
 
 public List<Customer> firstPage() {
 
-return employees;
+return customers;
 
 }
 
@@ -38,22 +38,26 @@ List<Customer> tempEmployees = new ArrayList<>();
 
 Customer emp1 = new Customer();
 
-emp1.setFirstname("abc");
-emp1.setCell_no("0300");
-emp1.setCnic("ss");
-emp1.setAddress("ad");
-emp1.setLastname("xyz");
-emp1.setUsername("Ab");
+emp1.setId(1);
+emp1.setFirstname("Saad");
+emp1.setCell_no("0300-000054");
+emp1.setCnic("42101-50362411-1");
+emp1.setEmail("msaad03@techlogix.com");
+emp1.setAddress("LightHouse");
+emp1.setLastname("Memon");
+emp1.setUsername("saad_khan");
 emp1.setPassword("ss");
 
 Customer emp2 = new Customer();
 
-emp2.setFirstname("abc");
-emp2.setCell_no("0300");
-emp2.setCnic("ss");
-emp2.setAddress("ad");
-emp2.setLastname("xyz");
-emp2.setUsername("Ab");
+emp2.setId(2);
+emp2.setFirstname("Basit");
+emp2.setEmail("basit_khatri@techlogix.com");
+emp2.setCell_no("0300-26644667");
+emp2.setCnic("42101-556844732-1");
+emp2.setAddress("Safoora");
+emp2.setLastname("Khatri");
+emp2.setUsername("k164225");
 emp2.setPassword("ss");
 
 tempEmployees.add(emp1);
